@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathryn Ostinowsky</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100..900&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body class="sono-font">
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header>
+            <div class="nav-container">
+                <div class="hamburger">&#9776;</div> <!-- Hamburger Icon -->
+                <ul class="nav">
+                    <li><a href="index.html">home</a></li>
+                    <!-- <li><a href="blog">blog</a></li>
+                    <li><a href="projects">projects</a></li>
+                    <li><a href="contact.html">contact</a></li> -->
+                    <!-- Dark Mode Toggle --> 
+                    <li id="theme">
+                        <button @click="toggleDarkMode"> 
+                            {{ isDark ? '💡' : '🌑' }}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile Nav -->
+            <ul class="mobile-nav">
+                <li><a href="index.html">home</a></li>
+                <!-- <li><a href="/blog">blog</a></li>
+                <li><a href="/projects">projects</a></li> 
+                <li><a href="contact.html">contact</a></li> -->
+                <li id="mobile-theme">
+                    <button @click="toggleDarkMode"> 
+                        {{ isDark ? '💡' : '🌑' }}
+                    </button>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="main-content">
+                <div class="main-title lexend-title"><b>Hi, I'm Kathryn.</b></div>
+                <div class="content-wrapper">
+                    <div class="image">
+                        <img src="images/kat_b.jpg" alt="Kathryn">
+                    </div>
+                    <div class="intro">
+                        <p>I'm a test engineer at the <a href="https://www.stsci.edu/home">Space Telescope Science Institute</a>, where I contribute to the development and maintenance of applications and testing frameworks that support access to telescope data. My work spans frontend and backend development and test automation, using technologies such as Vue.js, Robot Framework, FastAPI, Python, Kafka, Airflow, and PostgreSQL.</p>
+                        <br>
+                        <p>Outside of work, I'm passionate about learning, coffee, video games, progressive metal, getting lost in a good book, 
+                            and working torwards my next big running goal.</p>
+                        <br>
+                        <p>Currently, the best way to contact me is via email <a href="mailto:kostinowsky@gmail.com">(kostinowsky@gmail.com)</a> or <a href="https://www.linkedin.com/in/kostinowsky/" target="_blank">LinkedIn</a>.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Copyright &copy; 2026 Kathryn Ostinowsky</p>
+        </footer>
+    </div>
+    
+    <script src="scripts/main.js"></script>
+</body>
+</html>
